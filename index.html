@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/Favicon.png" />
+    <title>Basketball Scoreboard</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Home Score -->
+      <div>
+        <h1>HOME</h1>
+        <h2 id="Home-score" class="score">0</h2>
+
+        <div id="home-btn">
+          <button onclick="addOneHome()">+1</button>
+          <button onclick="addTwoHome()">+2</button>
+          <button onclick="addThreeHome()">+3</button>
+          <button onclick="resetHomeScore()">Reset</button>
+        </div>
+      </div>
+
+      <!-- Guest Score -->
+      <div>
+        <h1>GUEST</h1>
+        <h2 id="guest-score" class="score">0</h2>
+
+        <div id="guest-btn">
+          <button onclick="addOneGuest()">+1</button>
+          <button onclick="addTwoGuest()">+2</button>
+          <button onclick="addThreeGuest()">+3</button>
+          <button onclick="resrtGuestScore()">Reset</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
